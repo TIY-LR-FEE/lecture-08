@@ -1,0 +1,19 @@
+.content {
+  @include outer-container;
+
+  &--column1 {
+    @include span-columns(4);
+  }
+
+  &--button {
+    @include button(pill, chartreuse);
+  }
+
+  &--column2 {
+    @include span-columns(4);
+  }
+
+  &--image {
+    @include span-columns(4);
+  }
+}
