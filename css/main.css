@@ -1,72 +1,45 @@
-html {
-  box-sizing: border-box; }
+body {
+  background-color: #ccc; }
 
-*, *::after, *::before {
-  box-sizing: inherit; }
-
-.content {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .content::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .content--column1 {
+.gallery {
+  width: 1030px;
+  color: white;
+  text-align: center;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-family: Impact; }
+  .gallery--item1 {
     float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .content--column1:last-child {
-      margin-right: 0; }
-  .content--button {
-    border: 1px solid #5b981b;
-    border-color: #5b981b #428410 #2e7407;
-    border-radius: 16px;
-    box-shadow: inset 0 1px 0 0 #95fe25;
-    color: #333333;
-    display: inline-block;
-    font-size: inherit;
-    font-weight: normal;
-    line-height: 1;
-    background-color: chartreuse;
-    background-image: -webkit-linear-gradient(chartreuse, #4acc00);
-    background-image: linear-gradient(chartreuse, #4acc00);
-    padding: 7px 18px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 -1px 1px #89ff14;
-    background-clip: padding-box; }
-    .content--button:hover:not(:disabled) {
-      background-color: #74e800;
-      background-image: -webkit-linear-gradient(#74e800, #41ac04);
-      background-image: linear-gradient(#74e800, #41ac04);
-      background-clip: padding-box;
-      border: 1px solid #4c870d;
-      border-color: #4c870d #337401 #215c00;
-      box-shadow: inset 0 1px 0 0 #87fe10;
-      cursor: pointer;
-      text-shadow: 0 -1px 1px #3c8b04; }
-    .content--button:active:not(:disabled), .content--button:focus:not(:disabled) {
-      background: #5ac00c;
-      border: 1px solid #296501;
-      border-bottom: 1px solid #1e6100;
-      box-shadow: inset 0 0 6px 3px #339100;
-      text-shadow: 0 -1px 1px #3e8909; }
-    .content--button:disabled {
-      cursor: not-allowed;
-      opacity: 0.5; }
-  .content--column2 {
+    background-image: url("http://www.placecage.com/c/323/223"); }
+    .gallery--item1 {
+      width: 323px;
+      height: 183px;
+      border: 5px solid white;
+      padding: 40px 0 0;
+      margin: 0 14px 8px 0; }
+  .gallery--item2 {
     float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .content--column2:last-child {
-      margin-right: 0; }
-  .content--image {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
-    .content--image:last-child {
-      margin-right: 0; }
+    background-image: url("http://www.placecage.com/gif/323/223"); }
+    .gallery--item2 {
+      width: 323px;
+      height: 183px;
+      border: 5px solid white;
+      padding: 40px 0 0;
+      margin: 0 14px 8px 0; }
+  .gallery--item3 {
+    margin: 14px 0 0;
+    clear: left;
+    background-image: url("http://www.placecage.com/gif/670/223"); }
+    .gallery--item3 {
+      width: 670px;
+      height: 163px;
+      border: 5px solid white;
+      padding: 60px 0 0; }
+  .gallery--item4 {
+    float: right;
+    background-image: url("http://www.placecage.com/gif/324/464"); }
+    .gallery--item4 {
+      width: 324px;
+      height: 304px;
+      border: 5px solid white;
+      padding: 160px 0 0; }

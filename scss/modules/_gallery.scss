@@ -1,0 +1,64 @@
+@mixin small-photo {
+  & {
+    width: 323px;
+    height: 183px;
+    border: 5px solid white;
+    padding: 40px 0 0;
+    margin: 0 14px 8px 0;
+  }
+}
+
+@mixin wide-photo {
+  & {
+    width: 670px;
+    height: 163px;
+    border: 5px solid white;
+    padding: 60px 0 0;
+  }
+}
+
+@mixin tall-photo {
+  & {
+    width: 324px;
+    height: 304px;
+    border: 5px solid white;
+    padding: 160px 0 0;
+  }
+}
+
+.gallery {
+  width: 1030px;
+  color: white;
+  text-align: center;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-family: Impact;
+
+  &--item1 {
+    float: left;
+    @include small-photo;
+    background-image: url('http://www.placecage.com/c/323/223');
+
+  }
+
+  &--item2 {
+    float: left;
+    @include small-photo;
+    background-image: url('http://www.placecage.com/gif/323/223');
+  }
+
+  &--item3 {
+    margin: 14px 0 0;
+    clear: left;
+    @include wide-photo;
+    background-image: url('http://www.placecage.com/gif/670/223');
+  }
+
+  &--item4 {
+    float: right;
+    @include tall-photo;
+    background-image: url('http://www.placecage.com/gif/324/464');
+
+  }
+
+}
